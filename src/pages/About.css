@@ -12,7 +12,8 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px;
+  padding-left: 10px;
 }
 
 .section-title {
@@ -21,13 +22,14 @@
   margin-bottom: 50px;
   color: #333;
   font-weight: 700;
+  margin-right: 60px
 }
 
 /* Hero Section */
 .about-hero {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 120px 0 80px;
+  padding: 120px 0 200px;
   text-align: center;
 }
 
@@ -38,7 +40,8 @@
 
 .hero-title {
   font-size: 3rem;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  margin-top: 150px;
   font-weight: 700;
 }
 
@@ -50,14 +53,14 @@
 
 /* Mission Section */
 .about-mission {
-  padding: 80px 0;
+  padding: 150px 0;
   background: #f8f9fa;
 }
 
 .mission-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 60px;
+  gap: -0px;
   align-items: center;
 }
 
@@ -70,7 +73,7 @@
   font-size: 1.1rem;
   line-height: 1.8;
   color: #666;
-  margin-bottom: 20px;
+  margin-bottom: -100px;
 }
 
 .mission-stats {
@@ -217,7 +220,7 @@
 
 /* Contact Section */
 .about-contact {
-  padding: 80px 0;
+  padding: 200px 0;
   background: white;
 }
 
@@ -225,7 +228,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
-  margin-top: 60px;
+  margin-top: 30px;
 }
 
 .contact-info h3,
@@ -348,6 +351,7 @@
   
   .section-title {
     font-size: 2rem;
+    gap:40px;
   }
 }
 

@@ -2,7 +2,6 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Button from '../components/ui/Button';
-import RecentEvents from '../components/sections/RecentEvents';
 import UpcomingEvents from '../components/sections/UpcomingEvents';
 import { IMAGES } from '../constants/images';
 import './Home.css';
@@ -39,8 +38,16 @@ const Home = () => {
           </div>
         </section>
         
-        {/* Recent Events Section */}
-        <RecentEvents />
+        {/* Facts Section */}
+        <section className="facts-section">
+          <div className="container">
+            <h2 className="facts-title">Did You Know?</h2>
+            <ul className="facts-list">
+              <li className="fact-item">You can add interesting facts about your content here!</li>
+              {/* Add more facts as needed */}
+            </ul>
+          </div>
+        </section>
         
         {/* Upcoming Events Section */}
         <UpcomingEvents />

@@ -29,10 +29,7 @@ const About = () => {
                 <p className="mission-description">
                   At Raise & Learn, we believe every child deserves access to quality education and opportunities 
                   to explore their potential. We create engaging learning experiences that foster creativity, 
-                  critical thinking, and confidence in young minds.
-                </p>
-                <p className="mission-description">
-                  Through innovative programs, community partnerships, and dedicated mentorship, we're building 
+                  critical thinking, and confidence in young minds.Through innovative programs, community partnerships, and dedicated mentorship, we're building 
                   a brighter future where every child can thrive and contribute meaningfully to society.
                 </p>
               </div>
@@ -57,7 +54,7 @@ const About = () => {
                 <h3 className="member-name">Minchu Rao</h3>
                 <p className="member-role">Executive Director</p>
                 <p className="member-bio">
-                  With 15 years in education, Jane leads our mission to transform lives through learning.
+                  A high schooler who want to transform lives through learning.
                 </p>
               </div>
               <div className="team-member">
@@ -67,7 +64,7 @@ const About = () => {
                 <h3 className="member-name">Sanvi Bharadwaj</h3>
                 <p className="member-role">Executive Director</p>
                 <p className="member-bio">
-                  Michael designs innovative programs that engage children and foster creativity.
+                  A high schooler who want to raise funds for steam programs.
                 </p>
               </div>
               <div className="team-member">
@@ -77,7 +74,7 @@ const About = () => {
                 <h3 className="member-name">Sathvik Bharadwaj</h3>
                 <p className="member-role">Secretery</p>
                 <p className="member-bio">
-                  Sarah builds partnerships that strengthen our impact in the community.
+                  A middle schooler who is gives incredible ideas.
                 </p>
               </div>
             </div>

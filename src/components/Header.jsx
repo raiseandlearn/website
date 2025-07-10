@@ -57,7 +57,7 @@ const Header = () => {
               </button>
             </li>
             <li className="nav-item">
-              <button onClick={() => handleNavigation('recent-events')} className="nav-link">
+              <button onClick={() => navigateToPage('/recent-events')} className="nav-link">
                 Recent Events
               </button>
             </li>
@@ -92,7 +92,7 @@ const Header = () => {
         <div className="mobile-menu">
           <ul className="mobile-nav-list">
             <li><button onClick={() => handleNavigation('mission')} className="mobile-nav-link">Home</button></li>
-            <li><button onClick={() => handleNavigation('recent-events')} className="mobile-nav-link">Recent Events</button></li>
+            <li><button onClick={() => navigateToPage('/recent-events')} className="mobile-nav-link">Recent Events</button></li>
             <li><button onClick={() => handleNavigation('upcoming-events')} className="mobile-nav-link">Upcoming Events</button></li>
             <li><button onClick={() => handleNavigation('testimonials')} className="mobile-nav-link">Reviews</button></li>
             <li><button onClick={() => navigateToPage('/about')} className="mobile-nav-link">About</button></li>

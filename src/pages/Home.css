@@ -1,6 +1,6 @@
 /* Global Styles */
 .home {
-  min-height: 100vh;
+  min-height: 200vh;
   display: flex;
   flex-direction: column;
 }
@@ -27,11 +27,11 @@
 .mission {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  padding: 100px 0;
+  padding: 160px 0; /* Increased padding for a larger banner */
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-height: 600px;
+  min-height: 800px; /* Increased min-height for a larger banner */
   display: flex;
   align-items: center;
 }
@@ -41,7 +41,7 @@
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
+  bottom: 500px;
   z-index: 0;
 }
 
@@ -353,6 +353,38 @@
   flex-wrap: wrap;
 }
 
+/* Facts Section */
+.facts-section {
+  background: #fffbe6;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.facts-title {
+  font-size: 2rem;
+  color: #ff6b6b;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.facts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.fact-item {
+  font-size: 1.15rem;
+  color: #333;
+  background: #fff3cd;
+  border-radius: 10px;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(255, 215, 0, 0.08);
+  text-align: left;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .mission-title {
@@ -388,7 +420,8 @@
   }
   
   .mission {
-    padding: 80px 0;
+    padding: 120px 0; /* Increase padding for mobile as well */
+    min-height: 500px; /* Increase min-height for mobile */
   }
   
   .features,
