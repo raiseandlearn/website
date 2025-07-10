@@ -1,0 +1,337 @@
+/* Upcoming Events Section */
+.upcoming-events {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  position: relative;
+  min-height: 350px;
+}
+
+.upcoming-events .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.upcoming-events .events-container {
+  position: relative;
+}
+
+.upcoming-events .events-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(240, 147, 251, 0.1));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.upcoming-events .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  color: white;
+  font-weight: 700;
+  width: 25%;
+  flex-shrink: 0;
+}
+
+.upcoming-events .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  position: relative;
+  gap: 20px;
+}
+
+.upcoming-events .section-content {
+  display: flex;
+  width: 75%;
+  gap: 20px;
+}
+
+.upcoming-events .events-info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.upcoming-events .events-description {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.upcoming-events .events-stats {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.upcoming-events .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upcoming-events .stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.upcoming-events .stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2px;
+}
+
+.upcoming-events .scroll-controls-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.upcoming-events .scroll-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.upcoming-events .scroll-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-events .scroll-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.upcoming-events .scroll-button:active {
+  transform: translateY(0);
+}
+
+.upcoming-events .events-grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.upcoming-events .events-grid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+.upcoming-events .event-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.upcoming-events .event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}
+
+.upcoming-events .event-image {
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+}
+
+.upcoming-events .event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.upcoming-events .event-card:hover .event-image img {
+  transform: scale(1.05);
+}
+
+.upcoming-events .event-content {
+  padding: 18px;
+}
+
+.upcoming-events .event-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+  line-height: 1.3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.upcoming-events .event-subtitle {
+  color: #666;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.upcoming-events .event-date {
+  color: #f5576c;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding-top: 8px;
+  border-top: 1px solid #eee;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .upcoming-events {
+    padding: 80px 0;
+    min-height: 500px;
+  }
+  
+  .upcoming-events .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  .upcoming-events .section-title {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .upcoming-events .section-header {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .upcoming-events .section-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .upcoming-events .events-info {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .upcoming-events .events-description {
+    font-size: 1rem;
+  }
+  
+  .upcoming-events .events-stats {
+    justify-content: center;
+  }
+  
+  .upcoming-events .scroll-controls-container {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .upcoming-events .events-grid {
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .upcoming-events .event-card {
+    min-width: 100px;
+  }
+  
+  .upcoming-events .event-content {
+    padding: 15px;
+  }
+  
+  .upcoming-events .event-title {
+    font-size: 1rem;
+  }
+  
+  .upcoming-events .event-subtitle {
+    font-size: 0.8rem;
+  }
+  
+  .upcoming-events .scroll-button {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .upcoming-events {
+    padding: 60px 0;
+    min-height: 450px;
+  }
+  
+  .upcoming-events .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .upcoming-events .events-description {
+    font-size: 0.95rem;
+  }
+  
+  .upcoming-events .events-stats {
+    gap: 15px;
+  }
+  
+  .upcoming-events .stat-number {
+    font-size: 1.3rem;
+  }
+  
+  .upcoming-events .stat-label {
+    font-size: 0.8rem;
+  }
+  
+  .upcoming-events .event-card {
+    min-width: 90px;
+  }
+  
+  .upcoming-events .event-image {
+    height: 100px;
+  }
+  
+  .upcoming-events .event-content {
+    padding: 12px;
+  }
+  
+  .upcoming-events .scroll-button {
+    width: 35px;
+    height: 35px;
+  }
+}
