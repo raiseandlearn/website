@@ -1,0 +1,120 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Karaoke Night Raises $261 for Shankara Cancer Foundation",
+      "excerpt": "Community members came together for an evening of music, food, and fundraising to support cancer patients through the Shankara Cancer Foundation.",
+      "date": "February 10, 2026",
+      "category": "Events",
+      "image": "event1",
+      "imageTemplate": {
+        "abbreviation": "Karaoke Night Event",
+        "month": "FEB",
+        "theme": "purple"
+      },
+      "author": "Sarah Johnson",
+      "readTime": "3 min read",
+      "content": [
+        "On a heartwarming evening in Milpitas, our community came together for a special karaoke fundraising event to support the Shankara Cancer Foundation. Through the combined efforts of talented performers and generous food sales, we successfully raised $261 to help cancer patients and their families.",
+        "The event transformed our local venue into a vibrant celebration of music and compassion. Community members of all ages took to the stage, sharing their vocal talents while supporting a cause that touches so many lives. From classic ballads to contemporary hits, each performance brought joy and unity to the audience.",
+        "Our food vendors played a crucial role in the fundraising effort, preparing and serving delicious meals and snacks throughout the evening. The aroma of home-cooked food filled the air as attendees enjoyed a variety of dishes while socializing and supporting the cause. Every purchase directly contributed to our fundraising goal.",
+        "The Shankara Cancer Foundation provides vital support to cancer patients, including financial assistance for treatment, emotional support services, and resources for families navigating the challenges of cancer care. Our $261 contribution will help make a meaningful difference in the lives of those facing this difficult journey.",
+        "We are deeply grateful to everyone who participated—the brave karaoke performers, our food vendors, and all attendees who opened their hearts and wallets for this important cause. This event reminded us that when a community comes together, even small actions can create significant impact. We look forward to organizing more fundraising events to continue supporting the Shankara Cancer Foundation's mission."
+      ],
+      "highlights": [
+        "$261 raised for cancer patient support",
+        "Community karaoke performances",
+        "Local food vendors participated",
+        "Held in Milpitas",
+        "Funds support Shankara Cancer Foundation programs"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Mother's Day Food Sale Raises $1,000 for Cancer Patients",
+      "excerpt": "A special Mother's Day celebration brought our community together to honor mothers while raising crucial funds for the Shankara Cancer Foundation.",
+      "date": "February 5, 2026",
+      "category": "Events",
+      "image": "event2",
+      "imageTemplate": {
+        "abbreviation": "Mother's Day Sale",
+        "month": "FEB",
+        "theme": "pink"
+      },
+      "author": "Michael Chen",
+      "readTime": "4 min read",
+      "content": [
+        "This Mother's Day took on special meaning as our community gathered for a heartfelt food fundraising event benefiting the Shankara Cancer Foundation. Through the dedication of volunteers and the generosity of food lovers, we successfully raised approximately $1,000 to support cancer patients and their families during their most challenging times.",
+        "The event was a beautiful tribute to mothers everywhere, especially those courageously battling cancer. Volunteers prepared an array of homemade dishes, traditional favorites, and special treats that celebrated the comfort and love that mothers bring to our tables. From savory entrees to sweet desserts, every item was made with care and served with compassion.",
+        "What made this fundraiser particularly special was the spirit of community it fostered. Families came together not just to enjoy delicious food, but to honor the mothers in their lives and support those facing cancer. Many attendees shared stories of their own mothers and the impact cancer has had on their families, creating powerful moments of connection and empathy.",
+        "The $1,000 raised will directly support the Shankara Cancer Foundation's programs, which provide financial assistance for medical treatments, transportation to appointments, and emotional support services for patients and their families. These funds represent hope, healing, and the power of community care.",
+        "We extend our deepest gratitude to everyone who contributed to this successful event—the volunteers who prepared and served food, the families who attended and donated generously, and all those who spread the word. This Mother's Day fundraiser proved that when we come together with purpose and compassion, we can make a meaningful difference in the lives of those fighting cancer."
+      ],
+      "highlights": [
+        "$1,000 raised for cancer patient support",
+        "Mother's Day themed food sale",
+        "Homemade dishes and traditional favorites",
+        "Community celebration honoring mothers",
+        "Funds support Shankara Cancer Foundation programs"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Backyard Gathering Raises $200 for a Good Cause",
+      "excerpt": "A heartwarming backyard event brought family and friends together for homemade food and fundraising, proving that every contribution makes a difference.",
+      "date": "January 28, 2026",
+      "category": "Events",
+      "image": "event3",
+      "imageTemplate": {
+        "abbreviation": "Backyard Food Party",
+        "month": "JAN",
+        "theme": "orange"
+      },
+      "author": "Dr. Emily Rodriguez",
+      "readTime": "5 min read",
+      "content": [
+        "Sometimes the most meaningful fundraising efforts happen in the most intimate settings. Our recent backyard gathering demonstrated that you don't need a large venue or elaborate setup to make a real difference—just willing hearts, homemade food, and a shared commitment to helping others.",
+        "Family and friends gathered in our backyard for an afternoon of great food, warm conversations, and purpose-driven giving. The menu featured an array of homemade dishes, each prepared with love and care. From grilled favorites to traditional family recipes, every plate served represented both culinary passion and charitable intent.",
+        "What made this event special was its grassroots nature. There were no formal invitations or elaborate planning—just a simple idea that grew into action. Friends brought additional dishes to share, family members contributed their time and resources, and everyone who attended understood they were part of something bigger than just a meal together.",
+        "The relaxed backyard setting created an atmosphere where people could connect authentically while supporting a meaningful cause. Children played, adults shared stories, and throughout it all, there was a collective understanding that our gathering had a purpose beyond just socializing. The $200 raised represents the generosity of our close-knit circle and their willingness to support charitable work.",
+        "This experience reinforced an important truth: fundraising doesn't always require grand gestures or large-scale events. Sometimes the most impactful contributions come from small, personal initiatives where every dollar raised reflects genuine care and community spirit. We're grateful to everyone who participated and proved that when family and friends unite for a cause, even modest gatherings can create meaningful impact."
+      ],
+      "highlights": [
+        "$200 raised through backyard event",
+        "Homemade food prepared with care",
+        "Family and friends gathering",
+        "Intimate, grassroots fundraising approach",
+        "Proof that every contribution matters"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Book Release Event Raises $250 for Community Programs",
+      "excerpt": "A literary celebration combined the joy of reading with charitable giving, as book lovers gathered to support a meaningful cause.",
+      "date": "January 15, 2026",
+      "category": "Events",
+      "image": "event4",
+      "imageTemplate": {
+        "abbreviation": "Book Release Event",
+        "month": "JAN",
+        "theme": "blue"
+      },
+      "author": "Sarah Johnson",
+      "readTime": "4 min read",
+      "content": [
+        "Books have the power to transport us to different worlds, spark new ideas, and bring people together. Our recent book release event embodied all of these qualities while also serving a charitable purpose, successfully raising $250 to support community programs.",
+        "The event attracted book enthusiasts, community members, and supporters of our cause who gathered to celebrate literature while making a difference. Attendees had the opportunity to purchase signed copies of the featured book, with a portion of each sale directly benefiting our community initiatives. The author engaged with readers, sharing insights about the writing process and the inspiration behind the work.",
+        "Beyond book sales, the event featured a reading session where the author brought key passages to life, captivating the audience with compelling storytelling. The atmosphere buzzed with intellectual energy as attendees discussed themes, characters, and the broader implications of the work. It was a reminder of how literature can create connections and foster meaningful conversations.",
+        "Light refreshments were served, creating a welcoming environment where literature lovers could mingle, network, and share their own reading recommendations. Many attendees expressed appreciation for an event that combined their passion for books with an opportunity to give back to the community.",
+        "The $250 raised will support various community programs aimed at education, literacy, and youth development. This book release event proved that cultural and artistic celebrations can serve dual purposes—enriching our minds while strengthening our community. We're grateful to the author, attendees, and everyone who made this literary fundraiser a success."
+      ],
+      "highlights": [
+        "$250 raised for community programs",
+        "Featured author reading and book signing",
+        "Engaging literary discussions",
+        "Support for education and literacy initiatives",
+        "Combination of culture and charitable giving"
+      ]
+    }
+  ]
+}

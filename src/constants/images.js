@@ -1,7 +1,7 @@
 // Image constants for the application
 export const IMAGES = {
   mission: {
-    background: '/assets/images/mission/mission-bg.svg',
+    background: '/assets/images/home_page_image.png',
     // Add more mission images as needed
     // backgroundAlt: '/assets/images/mission/mission-bg-alt.jpg',
   },

@@ -1,0 +1,270 @@
+/* NewsArticle Page - Clean Rebuild */
+
+.news-article-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+/* Main Content Area */
+.article-main {
+  flex: 1;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.article-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 32px;
+  font-size: 0.875rem;
+}
+
+.breadcrumb-link {
+  background: none;
+  border: none;
+  color: #2563EB;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: #1E40AF;
+  text-decoration: underline;
+}
+
+.breadcrumb-separator {
+  color: #9CA3AF;
+}
+
+.breadcrumb-current {
+  color: #6B7280;
+}
+
+/* Article Header */
+.article-header {
+  margin-bottom: 40px;
+}
+
+.article-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  margin: 0 0 20px 0;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+.meta-category {
+  background-color: #2563EB;
+  color: #ffffff;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.meta-divider {
+  color: #D1D5DB;
+}
+
+.meta-date,
+.meta-time,
+.meta-author {
+  color: #6B7280;
+}
+
+/* Highlights Section */
+.highlights-section {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  border-left: 4px solid #2563EB;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 40px;
+}
+
+.highlights-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 20px 0;
+}
+
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.highlight-item {
+  padding-left: 32px;
+  position: relative;
+  color: #374151;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.highlight-item::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #10B981;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Article Image */
+.article-image-wrapper {
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.article-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+/* Article Content */
+.article-content {
+  margin-bottom: 50px;
+}
+
+.article-excerpt {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #374151;
+  font-weight: 500;
+  margin: 0 0 32px 0;
+  padding-bottom: 32px;
+  border-bottom: 2px solid #E5E7EB;
+}
+
+.article-body {
+  margin: 0;
+}
+
+.body-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.9;
+  color: #374151;
+  margin: 0 0 24px 0;
+}
+
+.body-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Article Footer */
+.article-footer {
+  padding-top: 40px;
+  border-top: 1px solid #E5E7EB;
+}
+
+/* Not Found */
+.not-found {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found h1 {
+  font-size: 2.5rem;
+  color: #111827;
+  margin: 0 0 16px 0;
+}
+
+.not-found p {
+  font-size: 1.125rem;
+  color: #6B7280;
+  margin: 0 0 32px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .article-main {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+
+  .article-container {
+    padding: 0 20px;
+  }
+
+  .article-title {
+    font-size: 2rem;
+  }
+
+  .highlights-section {
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+
+  .highlights-title {
+    font-size: 1.25rem;
+  }
+
+  .article-excerpt {
+    font-size: 1.125rem;
+  }
+
+  .body-paragraph {
+    font-size: 1rem;
+  }
+
+  .article-image {
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .article-container {
+    padding: 0 16px;
+  }
+
+  .article-title {
+    font-size: 1.75rem;
+  }
+
+  .article-meta {
+    font-size: 0.85rem;
+  }
+
+  .highlights-section {
+    padding: 20px;
+  }
+
+  .highlight-item {
+    padding-left: 28px;
+  }
+
+  .article-image {
+    max-height: 250px;
+  }
+}

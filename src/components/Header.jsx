@@ -57,11 +57,6 @@ const Header = () => {
               </button>
             </li>
             <li className="nav-item">
-              <button onClick={() => handleNavigation('upcoming-events')} className="nav-link">
-                Upcoming
-              </button>
-            </li>
-            <li className="nav-item">
               <button onClick={() => navigateToPage('/events')} className="nav-link">
                 Events
               </button>
@@ -92,7 +87,6 @@ const Header = () => {
         <div className="mobile-menu">
           <ul className="mobile-nav-list">
             <li><button onClick={() => handleNavigation('mission')} className="mobile-nav-link">Home</button></li>
-            <li><button onClick={() => handleNavigation('upcoming-events')} className="mobile-nav-link">Upcoming</button></li>
             <li><button onClick={() => navigateToPage('/events')} className="mobile-nav-link">Events</button></li>
             <li><button onClick={() => handleNavigation('testimonials')} className="mobile-nav-link">Reviews</button></li>
             <li><button onClick={() => navigateToPage('/about')} className="mobile-nav-link">About</button></li>

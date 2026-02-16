@@ -1,0 +1,22 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "quote": "Raise and Learn changed my life. The after-school program gave me the support I needed to excel in my studies. Now I'm heading to college with a full scholarship!",
+      "author": "Maria Rodriguez",
+      "role": "Program Graduate"
+    },
+    {
+      "id": 2,
+      "quote": "As a volunteer, I've witnessed firsthand the incredible impact this organization has on our community. It's inspiring to see students grow and thrive.",
+      "author": "James Chen",
+      "role": "Volunteer Tutor"
+    },
+    {
+      "id": 3,
+      "quote": "The literacy program helped me learn to read at 45 years old. I can now read to my grandchildren. This organization gave me a gift I'll treasure forever.",
+      "author": "Patricia Williams",
+      "role": "Literacy Program Participant"
+    }
+  ]
+}

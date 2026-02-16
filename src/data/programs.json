@@ -1,0 +1,16 @@
+{
+  "programs": [
+    {
+      "id": 1,
+      "title": "After School Learning",
+      "description": "Providing safe spaces and educational support for students after school hours. Our program includes tutoring, enrichment activities, and mentorship.",
+      "image": "event1"
+    },
+    {
+      "id": 2,
+      "title": "Community Literacy",
+      "description": "Building reading and writing skills for all ages. We offer free literacy classes, book clubs, and access to learning resources.",
+      "image": "event2"
+    }
+  ]
+}

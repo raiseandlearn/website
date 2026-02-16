@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import EventsPage from './pages/Events'
 import UpcomingPage from './pages/Upcoming'
+import NewsArticle from './pages/NewsArticle'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/upcoming" element={<UpcomingPage />} />
+          <Route path="/news/:id" element={<NewsArticle />} />
         </Routes>
       </Router>
     </div>
