@@ -4,121 +4,84 @@ import './About.css';
 const About = () => {
   return (
     <div className="about-page">
-      <main className="main">
-        {/* Hero Section */}
-        <section className="about-hero">
+      <main className="about-main">
+        <section className="about-section">
           <div className="container">
-            <div className="hero-content">
-              <h1 className="hero-title">About Raise & Learn</h1>
-              <p className="hero-subtitle">
-                Transforming communities by empowering children through education, creativity, and innovation.
+            <div className="about-card">
+              <h2 className="about-title">Educate Empower Elevate</h2>
+              <h4 className="about-tagline">About This Cause</h4>
+              <p className="about-text">
+                Raise and Learn is a nonprofit organization with a simple but powerful belief: education is the
+                foundation for opportunity, dignity, and a better future. We strive to empower youth by creating access
+                to quality learning environments, investing in school development, and expanding STEM education so
+                every child can discover their potential and thrive in a rapidly changing world.
+              </p>
+              <p className="about-text">
+                We also recognize that good health is essential to any child’s ability to learn and succeed. That is
+                why Raise and Learn is equally committed to improving healthcare support. We aim to bring comfort,
+                resources, and hope to those facing serious illnesses—especially cancer. By supporting cancer patients
+                and funding care, we stand alongside families during some of their most difficult moments, while also
+                working toward a future free from cancer.
+              </p>
+              <p className="about-text">
+                Your generosity helps us build schools, strengthen education, improve healthcare access, and provide
+                life-changing support to those who need it most. Together, we can raise opportunities, learn from
+                challenges, and change lives.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Mission Section */}
-        <section className="about-mission">
+        <section className="about-section">
           <div className="container">
-            <div className="mission-grid">
-              <div className="mission-text">
-                <h2 className="section-title">Our Mission</h2>
-                <p className="mission-description">
-                "Educate Empower Elevate"
-
-
-About This Cause
-Raise and Learn is a nonprofit organization with a simple but powerful belief: education is the foundation for opportunity, dignity, and a better future. We strive to empower youth by creating access to quality learning environments, investing in school development, and expanding STEM education so every child can discover their potential and thrive in a rapidly changing world.
-
-
-We also recognize that good health is essential to any child’s ability to learn and succeed. That is why Raise and Learn is equally committed to improving healthcare support. We aim to bring comfort, resources, and hope to those facing serious illnesses—especially cancer. By supporting cancer patients and funding care, we stand alongside families during some of their most difficult moments, while also working toward a future free from cancer.
-
-
-Your generosity helps us build schools, strengthen education, improve healthcare access, and provide life-changing support to those who need it most. Together, we can raise opportunities, learn from challenges, and change lives.
-                </p>
-              </div>
-              
-            </div>
-          </div>
-        </section>
-
-        
-
-        {/* Team Section */}
-        <section className="about-team">
-          <div className="container">
-            <div className="team-header">
-              <h2 className="section-title">Our Team</h2>
-            </div>
+            <h2 className="about-section-title">Meet the Team</h2>
             <div className="team-grid">
-              <div className="team-member">
-                <div className="member-avatar">
-                  <div className="avatar-placeholder">JS</div>
+              <div className="team-card">
+                <img
+                  className="team-image"
+                  src="/assets/images/team/minchu-rao.svg"
+                  alt="Minchu Rao"
+                  loading="lazy"
+                />
+                <div className="team-info">
+                  <h3 className="team-name">Minchu Rao</h3>
+                  <p className="team-title">Founding Member</p>
+                  <p className="team-intro">
+                    A student leader focused on transforming communities through learning and service.
+                  </p>
                 </div>
-                <h3 className="member-name">Minchu Rao</h3>
-                <p className="member-role">Executive Director</p>
-                <p className="member-bio">
-                  A high schooler who want to transform lives through learning.
-                </p>
               </div>
-              <div className="team-member">
-                <div className="member-avatar">
-                  <div className="avatar-placeholder">MD</div>
-                </div>
-                <h3 className="member-name">Sanvi Bharadwaj</h3>
-                <p className="member-role">Executive Director</p>
-                <p className="member-bio">
-                  A high schooler who want to raise funds for steam programs.
-                </p>
-              </div>
-              <div className="team-member">
-                <div className="member-avatar">
-                  <div className="avatar-placeholder">SJ</div>
-                </div>
-                <h3 className="member-name">Sathvik Bharadwaj</h3>
-                <p className="member-role">Secretery</p>
-                <p className="member-bio">
-                  A middle schooler who is gives incredible ideas.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
 
-        {/* Contact Section */}
-        <section className="about-contact">
-          <div className="container">
-            <h2 className="section-title">Get In Touch</h2>
-            <div className="contact-grid">
-              <div className="contact-info">
-                <h3>Connect With Us</h3>
-                <p>Ready to learn more about our programs or get involved?</p>
-                <div className="contact-details">
-                  <div className="contact-item">
-                    <strong>Email:</strong> info@raiseandlearn.org
-                  </div>
-                  <div className="contact-item">
-                    <strong>Phone:</strong> (555) 123-4567
-                  </div>
-                  <div className="contact-item">
-                    <strong>Address:</strong> 123 Learning Street, Education City, EC 12345
-                  </div>
+              <div className="team-card">
+                <img
+                  className="team-image"
+                  src="/assets/images/team/sanvi.png"
+                  alt="Sanvi Bharadwaj"
+                  loading="lazy"
+                />
+                <div className="team-info">
+                  <h3 className="team-name">Sanvi Bharadwaj</h3>
+                  <p className="team-title">Founding Member</p>
+                  <p className="team-intro">
+                    Passionate about expanding STEM opportunities and creating impact through education.
+                  </p>
                 </div>
               </div>
-              <div className="contact-form">
-                <h3>Send Us a Message</h3>
-                <form className="form">
-                  <div className="form-group">
-                    <input type="text" placeholder="Your Name" className="form-input" />
-                  </div>
-                  <div className="form-group">
-                    <input type="email" placeholder="Your Email" className="form-input" />
-                  </div>
-                  <div className="form-group">
-                    <textarea placeholder="Your Message" className="form-textarea" rows="5"></textarea>
-                  </div>
-                  <button type="submit" className="submit-button">Send Message</button>
-                </form>
+
+              <div className="team-card">
+                <img
+                  className="team-image"
+                  src="/assets/images/team/sathvik.png"
+                  alt="Sathvik Bharadwaj"
+                  loading="lazy"
+                />
+                <div className="team-info">
+                  <h3 className="team-name">Sathvik Bharadwaj</h3>
+                  <p className="team-title">Founding Member</p>
+                  <p className="team-intro">
+                    Brings fresh ideas and energy to help Raise &amp; Learn grow and serve more families.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
