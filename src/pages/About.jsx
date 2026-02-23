@@ -69,7 +69,7 @@ const About = () => {
               </div>
 
               <div className="team-card">
-                <img
+                <img 
                   className="team-image"
                   src="/assets/images/team/sathvik.png"
                   alt="Sathvik Bharadwaj"
