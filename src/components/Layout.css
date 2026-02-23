@@ -1,0 +1,12 @@
+/* App shell to ensure Header/Footer appear on every route */
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-shell-content {
+  flex: 1;
+  display: block;
+}
+
