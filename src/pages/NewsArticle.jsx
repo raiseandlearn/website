@@ -1,7 +1,5 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import Button from '../components/ui/Button';
 import EventImageTemplate from '../components/ui/EventImageTemplate';
 import { IMAGES } from '../constants/images';
@@ -19,7 +17,6 @@ const NewsArticle = () => {
   if (!article) {
     return (
       <div className="news-article-page">
-        <Header />
         <main className="article-main">
           <div className="article-container">
             <div className="not-found">
@@ -31,15 +28,12 @@ const NewsArticle = () => {
             </div>
           </div>
         </main>
-        <Footer />
       </div>
     );
   }
 
   return (
     <div className="news-article-page">
-      <Header />
-
       <main className="article-main">
         <div className="article-container">
 
@@ -133,8 +127,6 @@ const NewsArticle = () => {
 
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 };

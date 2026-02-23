@@ -1,12 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import './Events.css';
 
 const EventsPage = () => {
   return (
     <div className="events-page">
-      <Header />
       <main className="main container">
         <h1 className="section-title">Events</h1>
         <p>Here you can find all our events and activities!</p>
@@ -19,7 +16,6 @@ const EventsPage = () => {
           </ul>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

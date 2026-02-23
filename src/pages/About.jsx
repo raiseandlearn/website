@@ -1,12 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import './About.css';
 
 const About = () => {
   return (
     <div className="about-page">
-      <Header />
       <main className="main">
         {/* Hero Section */}
         <section className="about-hero">
@@ -27,10 +24,17 @@ const About = () => {
               <div className="mission-text">
                 <h2 className="section-title">Our Mission</h2>
                 <p className="mission-description">
-                  At Raise & Learn, we believe every child deserves access to quality education and opportunities 
-                  to explore their potential. We create engaging learning experiences that foster creativity, 
-                  critical thinking, and confidence in young minds.Through innovative programs, community partnerships, and dedicated mentorship, we're building 
-                  a brighter future where every child can thrive and contribute meaningfully to society.
+                "Educate Empower Elevate"
+
+
+About This Cause
+Raise and Learn is a nonprofit organization with a simple but powerful belief: education is the foundation for opportunity, dignity, and a better future. We strive to empower youth by creating access to quality learning environments, investing in school development, and expanding STEM education so every child can discover their potential and thrive in a rapidly changing world.
+
+
+We also recognize that good health is essential to any child’s ability to learn and succeed. That is why Raise and Learn is equally committed to improving healthcare support. We aim to bring comfort, resources, and hope to those facing serious illnesses—especially cancer. By supporting cancer patients and funding care, we stand alongside families during some of their most difficult moments, while also working toward a future free from cancer.
+
+
+Your generosity helps us build schools, strengthen education, improve healthcare access, and provide life-changing support to those who need it most. Together, we can raise opportunities, learn from challenges, and change lives.
                 </p>
               </div>
               
@@ -120,7 +124,6 @@ const About = () => {
           </div>
         </section>
       </main>
-      <Footer />
     </div>
   );
 };

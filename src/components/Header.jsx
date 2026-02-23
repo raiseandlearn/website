@@ -45,11 +45,21 @@ const Header = () => {
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
-      <div className="container">
-        <h1 className="logo" onClick={() => navigate('/')} style={{ cursor: 'pointer' }}>
-          Raise & Learn
-        </h1>
-        <nav className="nav">
+      <div className="header-container">
+        <button
+          type="button"
+          className="brand"
+          onClick={() => navigate('/')}
+          aria-label="Go to home"
+        >
+          <img className="brand-logo" src="/assets/logo/logo.png" alt="Raise & Learn logo" />
+          <span className="brand-text">
+            <span className="brand-title">Raise &amp; Learn</span>
+            <span className="brand-tagline">Educate Empower Elevate</span>
+          </span>
+        </button>
+
+        <nav className="nav" aria-label="Primary navigation">
           <ul className="nav-list">
             <li className="nav-item">
               <button onClick={() => handleNavigation('mission')} className="nav-link">
@@ -62,13 +72,13 @@ const Header = () => {
               </button>
             </li>
             <li className="nav-item">
-              <button onClick={() => handleNavigation('testimonials')} className="nav-link">
-                Reviews
+              <button onClick={() => navigateToPage('/about')} className="nav-link">
+                About
               </button>
             </li>
             <li className="nav-item">
-              <button onClick={() => navigateToPage('/about')} className="nav-link">
-                About
+              <button onClick={() => navigateToPage('/contact')} className="nav-link">
+                Contact Us
               </button>
             </li>
           </ul>
@@ -90,6 +100,7 @@ const Header = () => {
             <li><button onClick={() => navigateToPage('/events')} className="mobile-nav-link">Events</button></li>
             <li><button onClick={() => handleNavigation('testimonials')} className="mobile-nav-link">Reviews</button></li>
             <li><button onClick={() => navigateToPage('/about')} className="mobile-nav-link">About</button></li>
+            <li><button onClick={() => navigateToPage('/contact')} className="mobile-nav-link">Contact Us</button></li>
           </ul>
         </div>
       )}
