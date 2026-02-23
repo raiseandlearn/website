@@ -1,14 +1,24 @@
 import React from 'react';
-import EventImageTemplate from '../components/ui/EventImageTemplate';
 
 /**
  * EventImageTemplateDemo - Visual showcase of all available themes and configurations
  *
  * This component demonstrates all 8 color themes and various configurations
- * of the EventImageTemplate component. Use this as a reference when choosing
- * themes for your events.
+ * of event image usage. Use this as a reference when choosing images for your events.
  */
 const EventImageTemplateDemo = () => {
+  const themeImages = [
+    'public/assets/images/carousel/15.jpeg',
+    'public/assets/images/carousel/1.jpeg',
+    'public/assets/images/carousel/6.jpeg',
+  ];
+
+  const articleImagesByAbbreviation = {
+    KAR: 'public/assets/images/carousel/15.jpeg',
+    MOM: 'public/assets/images/carousel/1.jpeg',
+    BOK: 'public/assets/images/carousel/6.jpeg',
+  };
+
   const themes = [
     { name: 'purple', description: 'General events, evening programs', example: 'KAR' },
     { name: 'pink', description: "Mother's Day, celebrations", example: 'MOM' },
@@ -23,7 +33,6 @@ const EventImageTemplateDemo = () => {
   const currentArticles = [
     { abbreviation: 'KAR', month: 'FEB', theme: 'purple', title: 'Karaoke Night' },
     { abbreviation: 'MOM', month: 'FEB', theme: 'pink', title: "Mother's Day" },
-    { abbreviation: 'BBQ', month: 'JAN', theme: 'orange', title: 'Backyard Gathering' },
     { abbreviation: 'BOK', month: 'JAN', theme: 'blue', title: 'Book Release' },
   ];
 
@@ -48,12 +57,17 @@ const EventImageTemplateDemo = () => {
               borderRadius: '8px',
               overflow: 'hidden'
             }}>
-              <EventImageTemplate
-                abbreviation={config.abbreviation}
-                month={config.month}
-                theme={config.theme}
+              <img
+                src={articleImagesByAbbreviation[config.abbreviation] ?? themeImages[index % themeImages.length]}
+                alt={`${config.title} cover`}
                 width={400}
                 height={300}
+                style={{
+                  width: '100%',
+                  height: '300px',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
               />
               <div style={{ padding: '15px' }}>
                 <h3 style={{ fontSize: '16px', marginBottom: '5px' }}>{config.title}</h3>
@@ -80,12 +94,17 @@ const EventImageTemplateDemo = () => {
               borderRadius: '8px',
               overflow: 'hidden'
             }}>
-              <EventImageTemplate
-                abbreviation={theme.example}
-                month="JAN"
-                theme={theme.name}
+              <img
+                src={themeImages[index % themeImages.length]}
+                alt={`${theme.name} example`}
                 width={400}
                 height={300}
+                style={{
+                  width: '100%',
+                  height: '300px',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
               />
               <div style={{ padding: '15px' }}>
                 <h3 style={{
@@ -115,34 +134,34 @@ const EventImageTemplateDemo = () => {
         }}>
           <div style={{ textAlign: 'center' }}>
             <h3 style={{ fontSize: '16px', marginBottom: '10px' }}>Small (300x225)</h3>
-            <EventImageTemplate
-              abbreviation="FUN"
-              month="MAR"
-              theme="teal"
+            <img
+              src="/assets/images/events/event-3.svg"
+              alt="Fundraiser example"
               width={300}
               height={225}
+              style={{ width: '300px', height: '225px', objectFit: 'cover', display: 'block' }}
             />
           </div>
 
           <div style={{ textAlign: 'center' }}>
             <h3 style={{ fontSize: '16px', marginBottom: '10px' }}>Medium (400x300) - Default</h3>
-            <EventImageTemplate
-              abbreviation="FUN"
-              month="MAR"
-              theme="teal"
+            <img
+              src="/assets/images/events/event-3.svg"
+              alt="Fundraiser example"
               width={400}
               height={300}
+              style={{ width: '400px', height: '300px', objectFit: 'cover', display: 'block' }}
             />
           </div>
 
           <div style={{ textAlign: 'center' }}>
             <h3 style={{ fontSize: '16px', marginBottom: '10px' }}>Large (600x450)</h3>
-            <EventImageTemplate
-              abbreviation="FUN"
-              month="MAR"
-              theme="teal"
+            <img
+              src="/assets/images/events/event-3.svg"
+              alt="Fundraiser example"
               width={600}
               height={450}
+              style={{ width: '600px', height: '450px', objectFit: 'cover', display: 'block' }}
             />
           </div>
         </div>
@@ -162,12 +181,17 @@ const EventImageTemplateDemo = () => {
               borderRadius: '8px',
               overflow: 'hidden'
             }}>
-              <EventImageTemplate
-                abbreviation="EVT"
-                month={month}
-                theme="indigo"
+              <img
+                src={themeImages[index % themeImages.length]}
+                alt={`${month} event example`}
                 width={250}
                 height={188}
+                style={{
+                  width: '100%',
+                  height: '188px',
+                  objectFit: 'cover',
+                  display: 'block',
+                }}
               />
               <div style={{ padding: '10px', textAlign: 'center' }}>
                 <p style={{ fontSize: '14px', fontWeight: 'bold' }}>{month}</p>
@@ -188,23 +212,6 @@ const EventImageTemplateDemo = () => {
           fontSize: '14px'
         }}>
           <pre style={{ margin: 0, whiteSpace: 'pre-wrap' }}>
-{`import EventImageTemplate from './components/ui/EventImageTemplate';
-
-// Basic usage
-<EventImageTemplate
-  abbreviation="KAR"
-  month="FEB"
-  theme="purple"
-/>
-
-// From article data
-<EventImageTemplate
-  abbreviation={article.imageTemplate.abbreviation}
-  month={article.imageTemplate.month}
-  theme={article.imageTemplate.theme}
-  width={800}
-  height={400}
-/>`}
           </pre>
         </div>
       </section>

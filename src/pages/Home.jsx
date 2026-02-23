@@ -171,28 +171,6 @@ const Home = () => {
           </div>
         </section>
 
-        Success Stories
-        {/* <section className="success-stories">
-          <div className="container">
-            <h2 className="section-title">Success Stories</h2>
-            <div className="stories-grid">
-              {storiesData.stories.map((story) => (
-                <div key={story.id} className="story-card">
-                  <div className="story-quote">
-                    <p>"{story.quote}"</p>
-                  </div>
-                  <div className="story-author">
-                    <div className="author-info">
-                      <h4>{story.author}</h4>
-                      <p>{story.role}</p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section> */}
-
         {/* Call to Action */}
         <section className="cta-section">
           <div className="container">
@@ -202,14 +180,6 @@ const Home = () => {
                 Your support helps us continue our mission of empowering communities through education.
                 Whether you donate, volunteer, or spread the word, every action counts.
               </p>
-              {/* <div className="cta-actions">
-                <Button variant="primary" size="large">
-                  Donate Now
-                </Button>
-                <Button variant="secondary" size="large">
-                  Become a Volunteer
-                </Button>
-              </div> */}
             </div>
           </div>
         </section>
