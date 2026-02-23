@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <script>
+      // GitHub Pages serves this file for unknown routes. We store the original URL
+      // and redirect to '/', where the SPA can load and restore the route.
+      (function () {
+        try {
+          sessionStorage.setItem('rl:redirect', window.location.href);
+        } catch (e) {
+          // ignore
+        }
+        window.location.replace('/');
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
+
