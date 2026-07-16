@@ -83,6 +83,21 @@ const About = () => {
                   </p>
                 </div>
               </div>
+              <div className="team-card">
+                <img
+                  className="team-image"
+                  src=""
+                  alt="Raghav Marathe"
+                  loading="lazy"
+                />
+                <div className="team-info">
+                  <h3 className="team-name">Raghav Marathe</h3>
+                  <p className="team-title">Officer</p>
+                  <p className="team-intro">
+                    Passionate about expanding STEM opportunities and creating impact through education.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
