@@ -84,15 +84,15 @@ const About = () => {
                 </div>
               </div>
               <div className="team-card">
-                <img
+                <img 
                   className="team-image"
-                  src=""
+                  src="/assets/images/team/raghav.png"
                   alt="Raghav Marathe"
                   loading="lazy"
                 />
                 <div className="team-info">
                   <h3 className="team-name">Raghav Marathe</h3>
-                  <p className="team-title">Officer</p>
+                  <p className="team-title">Club Officer</p>
                   <p className="team-intro">
                     Passionate about expanding STEM opportunities and creating impact through education.
                   </p>
